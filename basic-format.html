@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery basic format</title>
+
+  <!-- jQueryを指定？ -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <h1>jQueryの基本書式</h1>
+
+  <dl>
+    <dt>h1を隠す</dt>
+    <dd>
+      <pre>
+        $(function() {
+          $(&#039;h1&#039;).hide();
+        });
+      </pre>
+    </dd>
+
+    <dt>h1を徐々に（1500ミリ秒かけて）隠す</dt>
+    <dd>
+      <pre>
+        $(function() {
+          $(&#039;h1&#039;).fadeOut(1500);
+        });
+      </pre>
+    </dd>
+    <dd>メソッドの後の（）内には引数が入り、速度を指定するなどできる</dd>
+  </dl>
+  <a href="index.html">戻る</a>
+
+  <!-- jQueryを呼び出す？ -->
+  <script src="script.js"></script>
+
+</body>
+</html>
