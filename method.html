@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS method</title>
+
+   <!-- CSSのlinkを指定 -->
+   <link rel="stylesheet" href="style.css">
+
+   <!-- jQueryを指定？ -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ 
+</head>
+<body>
+  <h1>CSSメソッド・textメソッド・htmlメソッド</h1>
+  <dl>
+
+    <dt>クリックするとテキストの色が変わるCSSメソッド</dt>
+    <dd>
+      <div class="btn" id="text-color">クリックするとコードの文字色が変化</div>
+      <div>
+        <div id="change-color">
+          <pre>
+            $(&#039;#text-color&#039;).click(function(){
+              $(&#039;#change-color&#039;).css(&#039;color&#039;,&#039;blue&#039;)
+            });
+          </pre>
+        </div>
+      </div>
+    </dd>
+
+    <dt>クリックするとテキストが変わるtextメソッド</dt>
+    <dd>
+      <div class="btn" id="text-contents">クリックするテキストが変化</div>
+      <div>
+        <div id="change-text">
+          <pre>
+            
+          </pre>
+        </div>
+      </div>
+    </dd>
+  </dl>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

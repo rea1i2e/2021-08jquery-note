@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>jQuery basic format</title>
 
+  <!-- CSSのlinkを指定 -->
+  <link rel="stylesheet" href="style.css">
+
   <!-- jQueryを指定？ -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
@@ -34,7 +37,32 @@
       </pre>
     </dd>
     <dd>メソッドの後の（）内には引数が入り、速度を指定するなどできる</dd>
+
+    <dt>指定したIDの要素を徐々に表示させる</dt>
+    <dd id="id-name">
+      <pre>
+        $(function() {
+          $(&#039;#id-name&#039;).fadeIn(&#039;slow&#039;);
+        });
+      </pre>
+    </dd>
+    <dd>引数には数値だけでなくslowのようなキーワードも指定できる。キーワードは''で囲う。</dd>
+
+    <dt>ボタンをクリック（イベント発生）すると、コードが現れる</dt>
+    <dd>
+      <div class="btn" id="appear">クリックしてコードを表示</div>
+      <div id="click-fadeIn">
+        <pre>
+          $(&#039;#appear&#039;).click(function(){
+            $(&#039;#click-fadeIn&#039;).fadeIn();
+        });        
+        </pre>
+      </div>
+    </dd>
+    <dd></dd>
+
   </dl>
+
   <a href="index.html">戻る</a>
 
   <!-- jQueryを呼び出す？ -->
