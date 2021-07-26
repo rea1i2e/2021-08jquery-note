@@ -1,6 +1,6 @@
 dt {
   font-weight: bold;
-  margin-top: 20px;
+  margin: 20px 0 10px;
 }
 
 #id-name {
@@ -13,8 +13,146 @@ dt {
   color: #fff;
   padding: 5px 20px;
   cursor:pointer;
+  box-shadow: 0px 5px #ccc;
+
 }
+
+.btn:hover {
+  opacity: .7;
+}
+
+.btn:active {
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+
 
 #click-fadeIn {
   display: none;
+}
+
+/* modal.html */
+
+.section-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.onsen-header {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading-nav-warapper {
+  display: flex;
+  align-items: center;
+}
+
+.onsen-header ul {
+  display: flex;
+}
+
+.onsen-header li {
+  list-style: none;
+  padding-left:20px;
+}
+
+.onsen-header .btn {
+  height :28px;
+}
+
+/*モーダル見本コード*/
+/* 
+.login-modal-wrapper, .signup-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+ */
+
+#modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;/* 重なり順を一番上へ */
+  display: none;
+}
+
+#reserve-modal{
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+}
+
+/* モーダルを閉じるボタン */
+#close {
+  width: 70px;
+  padding: 5px;
+  margin-left: auto;
+  background: #fff;
+  border: 1px solid #000;
+  cursor:pointer;
+}
+
+/* .site-desc */
+.site-desc {
+  color: #999;
+}
+
+/* feature */
+
+.feature ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature h2 {
+  text-align: center;
+}
+
+.feature li {
+  list-style: none;
+  width: 30%;
+}
+
+.feature img {
+  width: 100%;
+}
+
+.feature-desc {
+  display: none;
+}
+
+.desc-active {
+  display: block;
 }

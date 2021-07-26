@@ -30,18 +30,34 @@
         </div>
       </div>
     </dd>
-
+    
     <dt>クリックするとテキストが変わるtextメソッド</dt>
+    <dd>ボタンをクリックして答えを出すには○○○○に何が入る？</dd>
     <dd>
-      <div class="btn" id="text-contents">クリックするテキストが変化</div>
-      <div>
-        <div id="change-text">
-          <pre>
-            
-          </pre>
-        </div>
-      </div>
+      <div class="btn" id="text-contents">クリックするとテキストが変化</div>
+      <dd>
+        <pre>
+          $(&#039;#text-contents&#039;).click(function(){
+            $(&#039;#change-text&#039;).○○○○(&#039;ここに変更後のテキスト&#039;)
+          });
+        </pre>
     </dd>
+    <dd id="change-text">答え：</dd>
+    
+    <dt>クリックするとhtmlが変わるhtmlメソッド</dt>
+    <dd>ボタンをクリックしてリンク付きの答えを出すには○○○○に何が入る？</dd>
+    <dd>
+      <div class="btn" id="html-contents">クリックするとリンク付きの答えが出現</div>
+        <dd>
+          <pre>
+            $(&#039;#html-contents&#039;).click(function(){
+              $(&#039;#change-html&#039;).html(&#039;ここに変更後のHTML&#039;)
+            });
+          </pre>
+        </dd>
+    </dd>
+    <dd id="change-html">答え：</dd>
+
   </dl>
 
   <script src="script.js"></script>
