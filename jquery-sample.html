@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>溝沼温泉（jQueryサンプル）</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- jQueryを指定？ -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+</head>
+<body>
+  <header class="onsen-header">
+    <div class="heading-nav-warapper">
+      <h1>溝沼温泉</h1>
+      <nav>
+        <ul>
+          <li><a href="">お部屋</a></li>
+          <li><a href="">お料理</a></li>
+          <li><a href="">温泉</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="btn" id="reserve-btn">宿泊予約</div>
+  </header>
+  <div id="modal-wrapper">
+    <div id="reserve-modal">
+      <div id="close">X 閉じる</div>
+      <h2>宿泊予約</h2>
+      <form class="reserve-form" action="">
+        <p><label for="name">お名前</label>
+        <input id="name" type="text" placeholder=" 例：山田　太郎"></p>
+    
+        <p><laber for="email">メールアドレス</laber>
+        <input id="email" type="text" placeholder=" 例：example@example.com"></p>
+    
+        <p><label for="select-plan">ご希望プラン</label>
+        <select name="" id="select-plan">
+          <option hidden>プランを選択してください</option>
+          <option value="">松プラン</option>
+          <option value="">竹プラン</option>
+          <option value="">梅プラン</option>
+        </select></p>
+    
+        <p><label for="name">日時</label>
+        <input id="name" type="date"></p>
+    
+        <button>送信する</button>
+      </form>
+    </div>
+  </div>
+  <section class="site-desc section-wrapper">
+    <h2>このWebページは、jQuery練習のためのサンプルページです。（PC版のみ）</h2>
+    <ol>
+      <li>右上の宿泊予約ボタンを押すと、予約モーダルが表示されます。送信の機能はありません。（モーダルの練習）</li>
+      <li>お部屋やお料理のタイトルや画像にカーソルを合わせると、説明文が表示されます。（ホバーの練習）</li>
+      <li>よくある質問質問の質問をクリックすると、答えが表示されます。（アコーディオンの練習）</li>
+    </ol>
+  </section>
+
+  <section class="feature section-wrapper">
+    <ul>
+      <li class="feature-hover">
+        <h2>お部屋</h2>
+        <img src="img/japanese-room.jpg" alt="">
+        <p class="feature-desc">ゆっくりとくつろげる畳のお部屋です。</p>
+      </li>
+      <li  class="feature-hover">
+        <h2>お料理</h2>
+        <img src="img/sushi.jpg" alt="">
+        <p class="feature-desc">新鮮な魚と地元のお米を堪能できるお寿司が自慢です。</p>
+      </li>
+      <li  class="feature-hover">
+        <h2>温泉</h2>
+        <img src="img/hot-spring.jpg" alt="">
+        <p class="feature-desc">思わずぼーとしてしまい時間を忘れられる温泉です。</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="faq section-wrapper">
+    <h2>よくあるご質問</h2>
+    <ul class="faq-list">
+      <li class="faq-list-item">
+        <h3 class="question">ベビーベッドはありますか？</h3>
+        <span>+</span>
+        <p class="answer">数に限りはございますが、ご要望に応じてレンタルしております。利用される場合はご予約をおすすめします。</p>
+      </li>
+      <li class="faq-list-item">
+        <h3 class="question">子ども向けの食事はありますか？</h3>
+        <span>+</span>
+        <p class="answer">ご要望に応じて、お子様セットや離乳食セットを提供しています。</p>
+      </li>
+      <li class="faq-list-item">
+        <h3 class="question">2歳の子どもでも入浴できますか？</h3>
+        <span>+</span>
+        <p class="answer">水遊び用のオムツをご用意いただければ、ご利用いただけます。</p>
+      </li>
+    </ul>
+  </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
