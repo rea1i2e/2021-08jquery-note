@@ -48,20 +48,21 @@ $(function() {
   // アコーディオン機能を使ったFAQ
   // .answerはデフォルトで非表示
   // .faq-list-itemがクリックされると、その子要素のpタグにopenクラスが追加（削除）される。
-  // .openはデフォルトで表示されるよう指定しておく
+  // .openはデフォルトで表示されるよう指定しておく←しない。
   //クリックされた.faq-list-itemの子要素のspanタグのtextが条件に応じて書き換えられる。
   $('.faq-list-item').click(function(){
     var $answer=$(this).find('.answer')
     if($($answer).hasClass('open')){
       //.openをはずす
-      $($answer).removeClass('open');
+      // $($answer).removeClass('open');←不要な$や()がある
+      $answer.removeClass('open');
       $answer.slideUp();
       
       //.子要素のspanタグ内textを+に書き換える
       $(this).find('span').text('+');
     }else {
       //.openをつける
-      $($answer).addClass('open');
+      $answer.addClass('open');
       $answer.slideDown();
 
       //.子要素のspanタグ内textを-に書き換える
