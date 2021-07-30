@@ -13,7 +13,7 @@
 <body>
   <header class="onsen-header">
     <div class="heading-nav-warapper">
-      <h1>溝沼温泉</h1>
+      <h1><a href="#">溝沼温泉</a></h1>
       <nav>
         <ul>
           <li><a href="">お部屋</a></li>
@@ -50,14 +50,35 @@
       </form>
     </div>
   </div>
-  <section class="site-desc section-wrapper">
-    <h2>このWebページは、jQuery練習のためのサンプルページです。（PC版のみ）</h2>
-    <ol>
-      <li>右上の宿泊予約ボタンを押すと、予約モーダルが表示されます。送信の機能はありません。（モーダルの練習）</li>
-      <li>お部屋やお料理のタイトルや画像にカーソルを合わせると、説明文が表示されます。（ホバーの練習）</li>
-      <li>よくある質問質問の質問をクリックすると、答えが表示されます。（アコーディオンの練習）</li>
-    </ol>
-  </section>
+
+  <div class="main-visual">
+    <ul class="pn-btns">
+      <li class="change-btn prev-btn">←前へ</li>
+      <li class="change-btn next-btn">次へ→</li>
+    </ul>
+    <ul class="slides">
+      <li class="slide active"><img src="img/mv1.jpg" alt=""></li>
+      <li class="slide"><img src="img/mv2.jpg" alt=""></li>
+      <li class="slide"><img src="img/mv3.jpg" alt=""></li>
+      <li class="slide"><img src="img/mv4.jpg" alt=""></li>
+    </ul>
+    <div class="site-desc section-wrapper">
+      <h2>このWebページは、jQuery練習のためのサンプルページです。（PC版のみ）</h2>
+      <ol>
+        <li>この文章の背景画像の上下にある「次へ→」や「昼」などをクリックすると、写真が入れ替わります（スライド）</li>
+        <li>右上の宿泊予約ボタンを押すと、予約モーダルが表示されます。送信の機能はありません。（モーダルの練習）</li>
+        <li>お部屋やお料理のタイトルや画像にカーソルを合わせると、説明文が表示されます。（ホバーの練習）</li>
+        <li>よくある質問質問の質問をクリックすると、答えが表示されます。（アコーディオンの練習）</li>
+      </ol>
+    </div>
+
+    <ul id="index">
+      <li class="index-btn active-index-btn">朝</li>
+      <li class="index-btn">昼</li>
+      <li class="index-btn">夕</li>
+      <li class="index-btn">夜</li>
+    </ul>
+  </div>
 
   <section class="feature section-wrapper">
     <ul>
