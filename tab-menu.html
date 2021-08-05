@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tab memu sample</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- jQueryを指定 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+</head>
+<body>
+ 
+  <!-- タブメニュー
+ activeクラスに、クリック済のデザインを設定したcssを指定 -->
+ <div class="wrapper">
+
+   <h1>jQueryを使ったタブメニューのサンプル</h1>
+   <h2>毎日やること</h2>
+   <ul class="tab clearfix">
+     <li class="active-tab">朝</li>
+     <li>午前</li>
+     <li>午後</li>
+     <li>夜</li>
+    </ul>
+    
+    <!-- コンテンツ
+      全体を非表示にし、showクラスが付いたコンテンツのみ表示 -->
+      <div class="area">
+        <ul class="show">
+          <li>バーピー</li>
+          <li>瞑想</li>
+          <li>WOOP</li>
+        </ul>
+        <ul>
+          <li>プログラミング学習2h</li>
+          <li>Anchor</li>
+          <li>note</li>
+        </ul>
+        <ul>
+          <li>ウーバーイーツ</li>
+          <li>夕食作り</li>
+        </ul>
+        <ul>
+          <li>プログラミング学習1h</li>
+          <li>読書</li>
+          <li>エクスプレッシブライティング</li>
+          <li>プレディクション</li>
+        </ul>
+      </div>
+      
+      <a  class="retern" href="index.html">戻る</a>
+    </div>
+      
+  <script src="script.js"></script>
+</body>
+</html>
