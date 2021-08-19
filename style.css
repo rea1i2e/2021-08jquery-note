@@ -3,14 +3,54 @@ body {
   margin: 0;
 }
 
-a {
-  text-decoration: none;
-  color: #000;
+/* headerを含む画面上部の領域を固定 */
+.fixed-area {
+  box-sizing: border-box;
+  position: fixed;
+  top:0;
+  left:50%;
+  transform: translateX(-50%);
+  background: #fff;
+  width: 100%;
+  padding: 0 4%;
+}  
+
+header {
+  /* background: pink; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+}  
+
+nav {
+  width:60%;
+}
+
+nav ul {
+  /* background:olive; */
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+nav li {
+  padding-left: 8px;
 }
 
 a:hover {
   opacity: .7;
 }
+.contents-wrapper {
+  padding: 100px 4% 0;
+}
+
+/* #reference ************************************* */
+#reference {
+  min-height: calc( 100vh - 100px );
+}
+
 
 .index dt {
   font-weight: bold;
@@ -311,10 +351,6 @@ a:hover {
 /* **************************************
 tab-menu.html
 ************************************** */
-.wrapper {
-  padding: 24px;
-}
-
 .clearfix:after {
   content: "";
   display: block;
@@ -348,3 +384,4 @@ tab-menu.html
 .area ul.show {
   display: block;
 }
+

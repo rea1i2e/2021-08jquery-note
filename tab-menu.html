@@ -11,12 +11,20 @@
 
 </head>
 <body>
- 
+  <div class="fixed-area">
+    <header>
+      <h1>tab-menuのサンプル</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">jQuery noteに戻る</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div><!-- /.fixed-area -->
   <!-- タブメニュー
  activeクラスに、クリック済のデザインを設定したcssを指定 -->
- <div class="wrapper">
+ <section class="contents-wrapper">
 
-   <h1>jQueryを使ったタブメニューのサンプル</h1>
    <h2>毎日やること</h2>
    <ul class="tab clearfix">
      <li class="active-tab">朝</li>
@@ -50,8 +58,19 @@
         </ul>
       </div>
       
-      <a  class="retern" href="index.html">戻る</a>
-    </div>
+     
+ </section>
+
+    <section id="reference" class="contents-wrapper">
+      <h2>参考URL</h2>
+      <cite>
+        <ul>
+          <li><a href="https://www.flatflag.nir87.com/tab-1960">flatFlag jQueryでタブメニューを簡単に自作する2つの方法
+          </a></li>
+        </ul>
+      </cite>
+    </section>
+  
       
   <script src="script.js"></script>
 </body>
