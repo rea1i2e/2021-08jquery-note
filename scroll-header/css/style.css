@@ -1,0 +1,108 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  /* width: 100%; */
+}
+
+h1 {
+  font-size: 32px;
+  /* background: orange; */
+}
+
+section h2 {
+  /* background: orange; */
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+/* 背景画像 */
+.big-bg {
+  background-size: cover;
+  background-position: center bottom;
+  background-image: url(../img/main-visual.jpg);
+  min-height: 80vh;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper p {
+  margin: 32px;
+}
+
+/* ***************************************************
+header
+*************************************************** */
+
+header {
+  color: #fff;
+}
+
+.cb-header {
+  background: #000;
+  width: 100%;
+  /* ヘッダーバーを固定 */
+  position: fixed; 
+  /* 上から0の位置に固定 */
+  top: 0;
+  /* 左から0の位置に固定 */
+  left: 50%;
+  transform: translateX(-50%);
+  /* ヘッダーバーを非表示 */
+  display: none;
+  opacity: .7;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  /* background: #ccc; */
+  list-style: none;
+  display: flex;
+}
+
+header nav li {
+  margin-left: 16px;
+}
+
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* ***************************************************
+.site-desc
+*************************************************** */
+.site-desc {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  width: 50%;
+  /* height: 30%; */
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 16px;
+  text-align: center;
+}
+
+.site-desc h2 {
+  font-size: 32px;
+}
+
+
+/* ***************************************************
+section
+*************************************************** */
+
+.section-wrapper {
+  padding-top: 80px;
+}
